@@ -1,0 +1,23 @@
+{"name": "Mumbai",
+            "id": 4,
+            "theaters": [
+                {
+                    "id": "t1",
+                    "name": "MUPVR",
+                    "address":"mVijayanagar",                  
+                    "movies":[{"name":"Raees "},{"name":"Kaabil"}]
+                },
+                {
+                    "id": "t2",
+                    "name": "MUINOX",
+                    "address":"mcbs",
+                    "movies":[{"name":"Badrinath Ki Dulhania"},{"name":"Commando 2: The Black Money Trail"}]
+                },
+                {
+                    "id": "t3",
+                    "name": "MUINNOVATIVE",
+                    "address":"mumbai3",
+                    "movies":[{"name":"Ok Jaanu"},{"name":"Rangoon"}]
+                }
+            ]
+        }

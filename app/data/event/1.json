@@ -1,0 +1,23 @@
+{"name": "Bangalore",
+            "id": 1,
+            "theaters": [
+                {
+					"id": "t1",
+                    "name": "PVR",
+                    "address":"MG Road",                   
+                    "movies":[{"name":" Beauty and the Beast"},{"name":"The Fate of the Furious"}]
+                },
+                {
+					"id": "t2",
+                    "name": "INOX",
+                    "address":"Majestic",
+                    "movies":[{"name":" Guardians of the Galaxy Vol. 2"},{"name":"Logan"}]
+                },
+                {
+					"id": "t3",
+                    "name": "INNOVATIVE",
+                    "address":"marathahalli",
+                    "movies":[{"name":"Kong:Skull Island "},{"name":"The Boss Baby"}]
+                }
+            ]
+        }

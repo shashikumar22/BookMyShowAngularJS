@@ -1,0 +1,26 @@
+{"name": "Mysore",
+            "id": 2,
+            "theaters": [
+                {
+                    "id": "t1",
+                    "name": "MPVR",
+                    "address":"Vijayanagar",
+                                       
+                    "movies":[{"name":"Maasthi Gudi "},{"name":"Chakravarthy"}]
+                },
+                {
+                    "id": "t2",
+                    "name": "MINOX",
+                    "address":"cbs",
+               
+                    "movies":[{"name":" Raajakumara"},{"name":"Hebbuli"}]
+                },
+                {
+                    "id": "t3",
+                    "name": "MINNOVATIVE",
+                    "address":"mysore3",
+                    "movies":[{"name":"Pushpaka Vimana"},{"name":"Srikanta"}]
+                 
+                }
+            ]
+        }

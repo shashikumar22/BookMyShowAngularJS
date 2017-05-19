@@ -1,0 +1,13 @@
+    <div class="row">
+      <div class="span11">
+        <h2>Movies</h2>
+      </div>
+    </div>
+    <ul  ng-repeat="t in event.theaters">
+
+    
+        <ul  ng-if="'t2' == t.id">
+            <li class="thumbnails" ng-click="movieSelection(m.name)"ng-repeat="m in t.movies"><a href="details">{{m.name}}</a></li>
+        </ul>
+</ul>
+  

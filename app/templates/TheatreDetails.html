@@ -1,0 +1,17 @@
+    <div class="row">
+      <div class="span11">
+        <h2>{{event.name | uppercase}} </h2>
+      </div>
+    </div>
+    <ul class="thumbnails">
+      <li ng-repeat="theater in event.theaters"  >
+          <div class="well span9">
+           <a href="event/{{event.id}}/{{theater.id}}">
+           <h3> {{theater.name}}</h3>
+            <p>{{theater.address}}</p>
+                     </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>

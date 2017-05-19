@@ -1,0 +1,50 @@
+
+<form name="newDetailsForm">
+<h4>select the number of tickets</h4>
+<button ng-click="decrement();">-</button>
+  count: {{count}}
+      <button ng-click="increment();">+</button>
+    </p>
+    <h4>select the timings</h4>
+    <select ng-model="movie.selectedTime">
+      <option value=10>10</option>
+        <option value=2>2</option>
+          <option value=5>5</option>
+            <option value=9>9</option>
+    </select>
+      <h4>Enter your Mail id</h4>
+       <input required ng-model="movie.email"/>
+     </form>
+  <button type="submit" ng-disabled="newDetailsForm.$invalid" ng-click="saveEvent(movie, newDetailsForm);userId(movie.email)" class="btn btn-primary"><a href="bookingDetails">Submit</a></button>
+   
+ 
+
+
+ </br>
+</br>
+</br>
+<!-- <h3>movieName:{{myservice.mn}}</h3>
+<h3>ticketCount:{{count}}</h3>
+<h3>movieTime:{{selectedTime}}</h3>
+<h3>e-mailID:{{email}}</h3> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

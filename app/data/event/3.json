@@ -1,0 +1,24 @@
+{"name": "Chennai",
+            "id": 3,
+            "theaters": [
+                {
+                    "id": "t1",
+                    "name": "CPVR",
+                    "address":"cVijayanagar",                  
+                    "movies":[{"name":"Bairavaa"},{"name":"Bogan"}]
+                },
+                {
+                    "id": "t2",
+                    "name": "CINOX",
+                    "address":"ccbs",
+                    "movies":[{"name":"Si3"},{"name":"Yaman"}]
+                },
+                {
+                    "id": "t3",
+                    "name": "CINNOVATIVE",
+                    "address":"chennai3",
+                    "loc":"innovative",
+                    "movies":[{"name":"Maanagaram"},{"name":"Kavan"}]
+                }
+            ]
+        }
