@@ -31,16 +31,26 @@ var eventsApp = angular.module('eventsApp', ['ngResource', 'ngRoute'])
                     }
                 }
             });
-        $routeProvider.when('/details',
+        // $routeProvider.when('/details',
+        //     {
+        //         templateUrl: 'templates/Details.html',
+        //         controller: 'DetailsController',
+        //     });
+         $routeProvider.when('/details',
             {
-                templateUrl: 'templates/Details.html',
-                controller: 'DetailsController',
+                templateUrl: 'templates/DetailsDatabase.html',
+                controller: 'DetailsControllerDatabase',
             });
 
-        $routeProvider.when("/bookingDetails",
+        // $routeProvider.when("/bookingDetails",
+        // {
+        //     templateUrl:"templates/BookingDetails.html",
+        //     controller:"BookingDetailsController",
+        // });
+      $routeProvider.when("/bookingDetails",
         {
-            templateUrl:"templates/BookingDetails.html",
-            controller:"BookingDetailsController",
+            templateUrl:"templates/BookingDetailsDatabase.html",
+            controller:"BookingDetailsDatabaseController",
         });
         
         $routeProvider.otherwise({redirectTo: '/cities'});
