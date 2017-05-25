@@ -1,0 +1,7 @@
+<div>
+  <ul ng-repeat="t in movies">
+    <ul ng-if="t.tid==theaterId">
+      <li ng-click="movieSelection(t.name)"><a href="details">{{t.name}}</a></li>
+    </ul>
+  </ul>
+</div>

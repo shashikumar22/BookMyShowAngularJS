@@ -1,22 +1,10 @@
 "use strict";
 eventsApp.controller('DetailsControllerDatabase',
-//  function($scope,$http) {
-//  $scope.data = {};
-// $scope.submit= function(){
-//     console.log('clicked submit');
-//     $http({
-//         url: 'http://localhost:8000/blah',
-//         method: 'POST',
-//         data: $scope.data
-//     }).then(function (httpResponse) {
-//         console.log('response:', httpResponse);
-//     })
-//    }
-//  });
 
-
-function DetailsController($scope,eventData,$http,myservice){
+function DetailsController($scope,eventData,$http,myservice,$location){
+      $scope.myservice = myservice;
     $scope.count=0;
+
     $scope.increment=function(){
       $scope.count++;
     }
@@ -25,30 +13,27 @@ function DetailsController($scope,eventData,$http,myservice){
       $scope.count--;
     }
     }
-        $scope.movie = {};
-      // $scope.moviename=myservice.mn;
-        $scope.saveEvent = function(movie, newDetailsForm) {
+    
+
+       $scope.movie = {};
+     $scope.saveEvent = function(movie, newDetailsForm) {
+
+      console.log(myservice.mn);
+       
             if(newDetailsForm.$valid) {
             $scope.movie.movieName=myservice.mn;
             $scope.movie.ticketCount=$scope.count;
-                eventData.save(movie)
-                    .$promise
-                    .then(function(response) { console.log('success', response)})
-                    .catch(function(response) { console.log('failure', response)});
-            }
-            console.log('clicked submit');
     $http({
-        url: 'http://localhost:8000/booking',
+        url: '/booking',
         method: 'POST',
         data: $scope.movie,
-    }).then(function (httpResponse) {
-        console.log('response:', httpResponse);
+    }).then(function (httpResponse) {   
+    console.log('response:', httpResponse);
+     console.log("http  response emailid :"+movie.email);
+        $location.path( "/bookingDetails" );
+        myservice.userDetails(movie.email);
     });
-              $scope.message="sucess"+"\n"+"MovieName   :"+myservice.mn
-                           +"\n"+"TicketCount :"+$scope.count
-                           +"\n"+"MovieTime   :"+movie.selectedTime;
-              alert($scope.message);
-
-
-        };   
+   
+  }
+}
 });

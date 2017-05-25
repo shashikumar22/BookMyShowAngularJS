@@ -1,0 +1,9 @@
+<div>
+
+
+<ul ng-repeat="t in Theaters">
+  <ul ng-if="t.cid==cityId">
+    <li><a href="/event/{{cityId}}/{{t.tid}}">{{t.name}}</a></li>
+  </ul>
+</ul>
+</div>
